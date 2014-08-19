@@ -21,6 +21,14 @@
 		070396FD19A2ECA9009071DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070396DF19A2ECA8009071DD /* UIKit.framework */; };
 		0703970519A2ECA9009071DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0703970319A2ECA9009071DD /* InfoPlist.strings */; };
 		0703970719A2ECA9009071DD /* Candy_CrushTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0703970619A2ECA9009071DD /* Candy_CrushTests.m */; };
+		0703971719A2EDEE009071DD /* BlueCandy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0703971019A2EDEE009071DD /* BlueCandy.png */; };
+		0703971819A2EDEE009071DD /* CandySpace.png in Resources */ = {isa = PBXBuildFile; fileRef = 0703971119A2EDEE009071DD /* CandySpace.png */; };
+		0703971919A2EDEE009071DD /* GameBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 0703971219A2EDEE009071DD /* GameBackGround.png */; };
+		0703971A19A2EDEE009071DD /* GreenCandy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0703971319A2EDEE009071DD /* GreenCandy.png */; };
+		0703971B19A2EDEE009071DD /* MenuBackGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 0703971419A2EDEE009071DD /* MenuBackGround.png */; };
+		0703971C19A2EDEE009071DD /* OrangeCandy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0703971519A2EDEE009071DD /* OrangeCandy.png */; };
+		0703971D19A2EDEE009071DD /* PinkCandy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0703971619A2EDEE009071DD /* PinkCandy.png */; };
+		0703972019A2EFDB009071DD /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 0703971F19A2EFDB009071DD /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,15 @@
 		0703970219A2ECA9009071DD /* Candy CrushTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Candy CrushTests-Info.plist"; sourceTree = "<group>"; };
 		0703970419A2ECA9009071DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0703970619A2ECA9009071DD /* Candy_CrushTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Candy_CrushTests.m; sourceTree = "<group>"; };
+		0703971019A2EDEE009071DD /* BlueCandy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BlueCandy.png; path = Images/BlueCandy.png; sourceTree = "<group>"; };
+		0703971119A2EDEE009071DD /* CandySpace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CandySpace.png; path = Images/CandySpace.png; sourceTree = "<group>"; };
+		0703971219A2EDEE009071DD /* GameBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GameBackGround.png; path = Images/GameBackGround.png; sourceTree = "<group>"; };
+		0703971319A2EDEE009071DD /* GreenCandy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GreenCandy.png; path = Images/GreenCandy.png; sourceTree = "<group>"; };
+		0703971419A2EDEE009071DD /* MenuBackGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MenuBackGround.png; path = Images/MenuBackGround.png; sourceTree = "<group>"; };
+		0703971519A2EDEE009071DD /* OrangeCandy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OrangeCandy.png; path = Images/OrangeCandy.png; sourceTree = "<group>"; };
+		0703971619A2EDEE009071DD /* PinkCandy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PinkCandy.png; path = Images/PinkCandy.png; sourceTree = "<group>"; };
+		0703971E19A2EFDB009071DD /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
+		0703971F19A2EFDB009071DD /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +134,8 @@
 				070396ED19A2ECA8009071DD /* Main.storyboard */,
 				070396F019A2ECA8009071DD /* ViewController.h */,
 				070396F119A2ECA8009071DD /* ViewController.m */,
+				0703971E19A2EFDB009071DD /* Game.h */,
+				0703971F19A2EFDB009071DD /* Game.m */,
 				070396F319A2ECA9009071DD /* Images.xcassets */,
 				070396E219A2ECA8009071DD /* Supporting Files */,
 			);
@@ -126,6 +145,13 @@
 		070396E219A2ECA8009071DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0703971019A2EDEE009071DD /* BlueCandy.png */,
+				0703971119A2EDEE009071DD /* CandySpace.png */,
+				0703971219A2EDEE009071DD /* GameBackGround.png */,
+				0703971319A2EDEE009071DD /* GreenCandy.png */,
+				0703971419A2EDEE009071DD /* MenuBackGround.png */,
+				0703971519A2EDEE009071DD /* OrangeCandy.png */,
+				0703971619A2EDEE009071DD /* PinkCandy.png */,
 				070396E319A2ECA8009071DD /* Candy Crush-Info.plist */,
 				070396E419A2ECA8009071DD /* InfoPlist.strings */,
 				070396E719A2ECA8009071DD /* main.m */,
@@ -228,9 +254,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0703971C19A2EDEE009071DD /* OrangeCandy.png in Resources */,
 				070396F419A2ECA9009071DD /* Images.xcassets in Resources */,
+				0703971A19A2EDEE009071DD /* GreenCandy.png in Resources */,
+				0703971B19A2EDEE009071DD /* MenuBackGround.png in Resources */,
 				070396E619A2ECA8009071DD /* InfoPlist.strings in Resources */,
 				070396EF19A2ECA8009071DD /* Main.storyboard in Resources */,
+				0703971819A2EDEE009071DD /* CandySpace.png in Resources */,
+				0703971719A2EDEE009071DD /* BlueCandy.png in Resources */,
+				0703971919A2EDEE009071DD /* GameBackGround.png in Resources */,
+				0703971D19A2EDEE009071DD /* PinkCandy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +285,7 @@
 				070396F219A2ECA9009071DD /* ViewController.m in Sources */,
 				070396EC19A2ECA8009071DD /* AppDelegate.m in Sources */,
 				070396E819A2ECA8009071DD /* main.m in Sources */,
+				0703972019A2EFDB009071DD /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
