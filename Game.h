@@ -25,6 +25,12 @@ int Candy14Type;
 int Candy15Type;
 int Candy16Type;
 
+int FirstCandyPushed;
+int FirstCandyTypePushed;
+int SecondCandyPushed;
+int SecondCandyTypePushed;
+bool FirstCandySelected;
+
 @interface Game : UIViewController
 {
     IBOutlet UIButton *Candy1;
@@ -60,6 +66,27 @@ int Candy16Type;
     IBOutlet UIImageView *Candy15Selected;
     IBOutlet UIImageView *Candy16Selected;
 }
+
+-(IBAction)Candy1Button:(id)sender;
+-(IBAction)Candy2Button:(id)sender;
+-(IBAction)Candy3Button:(id)sender;
+-(IBAction)Candy4Button:(id)sender;
+-(IBAction)Candy5Button:(id)sender;
+-(IBAction)Candy6Button:(id)sender;
+-(IBAction)Candy7Button:(id)sender;
+-(IBAction)Candy8Button:(id)sender;
+-(IBAction)Candy9Button:(id)sender;
+-(IBAction)Candy10Button:(id)sender;
+-(IBAction)Candy11Button:(id)sender;
+-(IBAction)Candy12Button:(id)sender;
+-(IBAction)Candy13Button:(id)sender;
+-(IBAction)Candy14Button:(id)sender;
+-(IBAction)Candy15Button:(id)sender;
+-(IBAction)Candy16Button:(id)sender;
+
+-(void)CheckSwap;
+-(void)UnselectCandies;
+-(void)SwapCandies;
 
 -(void)Candy1SelectedType;
 -(void)Candy2SelectedType;
