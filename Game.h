@@ -48,6 +48,15 @@ bool Candy14Deleted;
 bool Candy15Deleted;
 bool Candy16Deleted;
 
+int MovesLeftNumber;
+int ScoreNumber;
+int AddedScoreNumber;
+
+// NSInteger saves even after power down
+NSInteger HighScoreNumber;
+
+bool GameFinished;
+
 @interface Game : UIViewController
 {
     IBOutlet UIButton *Candy1;
@@ -82,6 +91,13 @@ bool Candy16Deleted;
     IBOutlet UIImageView *Candy14Selected;
     IBOutlet UIImageView *Candy15Selected;
     IBOutlet UIImageView *Candy16Selected;
+
+    IBOutlet UIButton *Shuffle;
+    IBOutlet UIButton *Exit;
+    IBOutlet UILabel *Score;
+    IBOutlet UILabel *MovesLeft;
+    IBOutlet UILabel *HighScore;
+    IBOutlet UILabel *ThanksForPlaying;
 }
 
 -(IBAction)Candy1Button:(id)sender;
@@ -125,5 +141,9 @@ bool Candy16Deleted;
 -(void)Candy14SelectedType;
 -(void)Candy15SelectedType;
 -(void)Candy16SelectedType;
+
+-(void)Move;
+-(void)Scoring;
+-(IBAction)Shuffle:(id)sender;
 
 @end
