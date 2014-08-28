@@ -29,7 +29,24 @@ int FirstCandyPushed;
 int FirstCandyTypePushed;
 int SecondCandyPushed;
 int SecondCandyTypePushed;
+
 bool FirstCandySelected;
+bool Candy1Deleted;
+bool Candy2Deleted;
+bool Candy3Deleted;
+bool Candy4Deleted;
+bool Candy5Deleted;
+bool Candy6Deleted;
+bool Candy7Deleted;
+bool Candy8Deleted;
+bool Candy9Deleted;
+bool Candy10Deleted;
+bool Candy11Deleted;
+bool Candy12Deleted;
+bool Candy13Deleted;
+bool Candy14Deleted;
+bool Candy15Deleted;
+bool Candy16Deleted;
 
 @interface Game : UIViewController
 {
@@ -83,6 +100,10 @@ bool FirstCandySelected;
 -(IBAction)Candy14Button:(id)sender;
 -(IBAction)Candy15Button:(id)sender;
 -(IBAction)Candy16Button:(id)sender;
+
+-(void)CheckConnection;
+-(void)GetRidOfCandies;
+-(void)ReplaceCandies;
 
 -(void)CheckSwap;
 -(void)UnselectCandies;

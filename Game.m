@@ -14,6 +14,314 @@
 
 @implementation Game
 
+// Check if there are any connections; colored candies in a row
+-(void)CheckConnection
+{
+    // Check to see if 4 are in a row
+    if(Candy1Type == Candy2Type && Candy2Type == Candy3Type && Candy3Type == Candy4Type)
+    {
+        Candy1Deleted = YES;
+        Candy2Deleted = YES;
+        Candy3Deleted = YES;
+        Candy4Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy5Type == Candy6Type && Candy6Type == Candy7Type && Candy7Type == Candy8Type)
+    {
+        Candy5Deleted = YES;
+        Candy6Deleted = YES;
+        Candy7Deleted = YES;
+        Candy8Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy9Type == Candy10Type && Candy10Type == Candy11Type && Candy11Type == Candy12Type)
+    {
+        Candy9Deleted = YES;
+        Candy10Deleted = YES;
+        Candy11Deleted = YES;
+        Candy12Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy13Type == Candy14Type && Candy14Type == Candy15Type && Candy15Type == Candy16Type)
+    {
+        Candy13Deleted = YES;
+        Candy14Deleted = YES;
+        Candy15Deleted = YES;
+        Candy16Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy1Type == Candy5Type && Candy5Type == Candy9Type && Candy9Type == Candy13Type)
+    {
+        Candy1Deleted = YES;
+        Candy5Deleted = YES;
+        Candy9Deleted = YES;
+        Candy13Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy2Type == Candy6Type && Candy6Type == Candy10Type && Candy10Type == Candy14Type)
+    {
+        Candy2Deleted = YES;
+        Candy6Deleted = YES;
+        Candy10Deleted = YES;
+        Candy14Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy3Type == Candy7Type && Candy7Type == Candy11Type && Candy11Type == Candy15Type)
+    {
+        Candy3Deleted = YES;
+        Candy7Deleted = YES;
+        Candy11Deleted = YES;
+        Candy15Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy4Type == Candy8Type && Candy8Type == Candy12Type && Candy12Type == Candy16Type)
+    {
+        Candy4Deleted = YES;
+        Candy8Deleted = YES;
+        Candy12Deleted = YES;
+        Candy16Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    
+    // Check to see if 3 are in a row
+    if(Candy1Type == Candy2Type && Candy2Type == Candy3Type)
+    {
+        Candy1Deleted = YES;
+        Candy2Deleted = YES;
+        Candy3Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy2Type == Candy3Type && Candy3Type == Candy4Type)
+    {
+        Candy2Deleted = YES;
+        Candy3Deleted = YES;
+        Candy4Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy5Type == Candy6Type && Candy6Type == Candy7Type)
+    {
+        Candy5Deleted = YES;
+        Candy6Deleted = YES;
+        Candy7Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy6Type == Candy7Type && Candy7Type == Candy8Type)
+    {
+        Candy6Deleted = YES;
+        Candy7Deleted = YES;
+        Candy8Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy9Type == Candy10Type && Candy10Type == Candy11Type)
+    {
+        Candy9Deleted = YES;
+        Candy10Deleted = YES;
+        Candy11Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy10Type == Candy11Type && Candy11Type == Candy12Type)
+    {
+        Candy10Deleted = YES;
+        Candy11Deleted = YES;
+        Candy12Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy13Type == Candy14Type && Candy14Type == Candy15Type)
+    {
+        Candy13Deleted = YES;
+        Candy14Deleted = YES;
+        Candy15Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy14Type == Candy15Type && Candy15Type == Candy16Type)
+    {
+        Candy14Deleted = YES;
+        Candy15Deleted = YES;
+        Candy16Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    
+    if(Candy1Type == Candy5Type && Candy5Type == Candy9Type)
+    {
+        Candy1Deleted = YES;
+        Candy5Deleted = YES;
+        Candy9Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy5Type == Candy9Type && Candy9Type == Candy13Type)
+    {
+        Candy5Deleted = YES;
+        Candy9Deleted = YES;
+        Candy13Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy2Type == Candy6Type && Candy6Type == Candy10Type)
+    {
+        Candy2Deleted = YES;
+        Candy6Deleted = YES;
+        Candy10Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy6Type == Candy10Type && Candy10Type == Candy14Type)
+    {
+        Candy6Deleted = YES;
+        Candy10Deleted = YES;
+        Candy14Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy3Type == Candy7Type && Candy7Type == Candy11Type)
+    {
+        Candy3Deleted = YES;
+        Candy7Deleted = YES;
+        Candy11Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy7Type == Candy11Type && Candy11Type == Candy15Type)
+    {
+        Candy7Deleted = YES;
+        Candy11Deleted = YES;
+        Candy15Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy4Type == Candy8Type && Candy8Type == Candy12Type)
+    {
+        Candy4Deleted = YES;
+        Candy8Deleted = YES;
+        Candy12Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+    if(Candy8Type == Candy12Type && Candy12Type == Candy16Type)
+    {
+        Candy8Deleted = YES;
+        Candy12Deleted = YES;
+        Candy16Deleted = YES;
+        [self performSelector:@selector(GetRidOfCandies) withObject:self afterDelay:0.1];
+    }
+}
+
+-(void)GetRidOfCandies
+{
+    if(Candy1Deleted == YES)
+    {
+        Candy1.hidden = YES;
+        Candy1Type = arc4random() %4;
+    }
+    if(Candy2Deleted == YES)
+    {
+        Candy2.hidden = YES;
+        Candy2Type = arc4random() %4;
+    }
+    if(Candy3Deleted == YES)
+    {
+        Candy3.hidden = YES;
+        Candy3Type = arc4random() %4;
+    }
+    if(Candy4Deleted == YES)
+    {
+        Candy4.hidden = YES;
+        Candy4Type = arc4random() %4;
+    }
+    if(Candy5Deleted == YES)
+    {
+        Candy5.hidden = YES;
+        Candy5Type = arc4random() %4;
+    }
+    if(Candy6Deleted == YES)
+    {
+        Candy6.hidden = YES;
+        Candy6Type = arc4random() %4;
+    }
+    if(Candy7Deleted == YES)
+    {
+        Candy7.hidden = YES;
+        Candy7Type = arc4random() %4;
+    }
+    if(Candy8Deleted == YES)
+    {
+        Candy8.hidden = YES;
+        Candy8Type = arc4random() %4;
+    }
+    if(Candy9Deleted == YES)
+    {
+        Candy9.hidden = YES;
+        Candy9Type = arc4random() %4;
+    }
+    if(Candy10Deleted == YES)
+    {
+        Candy10.hidden = YES;
+        Candy10Type = arc4random() %4;
+    }
+    if(Candy11Deleted == YES)
+    {
+        Candy11.hidden = YES;
+        Candy11Type = arc4random() %4;
+    }
+    if(Candy12Deleted == YES)
+    {
+        Candy12.hidden = YES;
+        Candy12Type = arc4random() %4;
+    }
+    if(Candy13Deleted == YES)
+    {
+        Candy13.hidden = YES;
+        Candy13Type = arc4random() %4;
+    }
+    if(Candy14Deleted == YES)
+    {
+        Candy14.hidden = YES;
+        Candy14Type = arc4random() %4;
+    }
+    if(Candy15Deleted == YES)
+    {
+        Candy15.hidden = YES;
+        Candy15Type = arc4random() %4;
+    }
+    if(Candy16Deleted == YES)
+    {
+        Candy16.hidden = YES;
+        Candy16Type = arc4random() %4;
+    }
+    
+    [self performSelector:@selector(ReplaceCandies) withObject:self afterDelay:0.1];
+}
+
+-(void)ReplaceCandies
+{
+    [self Candy1SelectedType];
+    [self Candy2SelectedType];
+    [self Candy3SelectedType];
+    [self Candy4SelectedType];
+    [self Candy5SelectedType];
+    [self Candy6SelectedType];
+    [self Candy7SelectedType];
+    [self Candy8SelectedType];
+    [self Candy9SelectedType];
+    [self Candy10SelectedType];
+    [self Candy11SelectedType];
+    [self Candy12SelectedType];
+    [self Candy13SelectedType];
+    [self Candy14SelectedType];
+    [self Candy15SelectedType];
+    [self Candy16SelectedType];
+    
+    Candy1.hidden = NO;
+    Candy2.hidden = NO;
+    Candy3.hidden = NO;
+    Candy4.hidden = NO;
+    Candy5.hidden = NO;
+    Candy6.hidden = NO;
+    Candy7.hidden = NO;
+    Candy8.hidden = NO;
+    Candy9.hidden = NO;
+    Candy10.hidden = NO;
+    Candy11.hidden = NO;
+    Candy12.hidden = NO;
+    Candy13.hidden = NO;
+    Candy14.hidden = NO;
+    Candy15.hidden = NO;
+    Candy16.hidden = NO;
+}
+
 // Reset all elements to initial state
 -(void)UnselectCandies
 {
@@ -184,6 +492,7 @@
     }
     
     [self UnselectCandies];
+    [self CheckConnection];
 }
 
 // Determine if the First Candy and Second Candy are next to each other
@@ -191,12 +500,31 @@
 {
     if(FirstCandyPushed == SecondCandyPushed + 1)
     {
-        [self SwapCandies];
+        // Avoid swaps for candies on following row
+        if((FirstCandyPushed == 5) ||
+           (FirstCandyPushed == 9) ||
+           (FirstCandyPushed == 13))
+        {
+            [self UnselectCandies];
+        }
+        else
+        {
+            [self SwapCandies];
+        }
     }
     else if(FirstCandyPushed == SecondCandyPushed - 1)
     {
-        [self SwapCandies];
-    }
+        // Avoid swaps for candies on previous row
+        if((FirstCandyPushed == 4) ||
+           (FirstCandyPushed == 8) ||
+           (FirstCandyPushed == 12))
+        {
+            [self UnselectCandies];
+        }
+        else
+        {
+            [self SwapCandies];
+        }    }
     else if(FirstCandyPushed == SecondCandyPushed + 4)
     {
         [self SwapCandies];
@@ -693,6 +1021,9 @@
     [self Candy14SelectedType];
     [self Candy15SelectedType];
     [self Candy16SelectedType];
+    
+    // Have a delay before checking for connection
+    [self performSelector:@selector(CheckConnection) withObject:self afterDelay:0.1];
 
     [super viewDidLoad];
     // Do any additional setup after loading the view.
